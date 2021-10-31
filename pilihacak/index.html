@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+
+
+    <!-- meta -->
+
+    <!-- Primary Meta Tags -->
+
+    <title>Pilih Acak - Fatih Arridho</title>
+
+    <meta name="title" content="Pilih Acak">
+
+    <meta name="description" content="Roda lingkaran untuk menentukan siapa yang terpilih. ">
+
+    
+
+    <!-- Open Graph / Facebook -->
+
+    <meta property="og:type" content="website">
+
+    <meta property="og:url" content="https://metatags.io/">
+
+    <meta property="og:title" content="Pilih Acak">
+
+    <meta property="og:description" content="Roda lingkaran untuk menentukan siapa yang terpilih. ">
+
+    <meta property="og:image" content="/images/thumb.png">
+
+
+
+    <!-- Twitter -->
+
+    <meta property="twitter:card" content="summary_large_image">
+
+    <meta property="twitter:url" content="https://metatags.io/">
+
+    <meta property="twitter:title" content="Pilih Acak">
+
+    <meta property="twitter:description" content="Roda lingkaran untuk menentukan siapa yang terpilih. ">
+
+    <meta property="twitter:image" content="/images/thumb.png">
+
+
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/images/apple-icon-57x57.png">
+
+    <link rel="apple-touch-icon" sizes="60x60" href="/images/apple-icon-60x60.png">
+
+    <link rel="apple-touch-icon" sizes="72x72" href="/images/apple-icon-72x72.png">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="/images/apple-icon-76x76.png">
+
+    <link rel="apple-touch-icon" sizes="114x114" href="/images/apple-icon-114x114.png">
+
+    <link rel="apple-touch-icon" sizes="120x120" href="/images/apple-icon-120x120.png">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/apple-icon-144x144.png">
+
+    <link rel="apple-touch-icon" sizes="152x152" href="/images/apple-icon-152x152.png">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-icon-180x180.png">
+
+    <link rel="icon" type="image/png" sizes="192x192"  href="/images/android-icon-192x192.png">
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+
+    <link rel="icon" type="image/png" sizes="96x96" href="/images/favicon-96x96.png">
+
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+
+    <link rel="manifest" href="/images/manifest.json">
+
+    <meta name="msapplication-TileColor" content="#ffffff">
+
+    <meta name="msapplication-TileImage" content="/images/ms-icon-144x144.png">
+
+    <meta name="theme-color" content="#ffffff">
+
+
+
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Tebak Siapa ?</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Font Awesome -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet" />
+
+    <!-- Google Fonts -->
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet"
+
+    />
+
+    <!-- MDB -->
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.css" rel="stylesheet"/>
+
+</head>
+
+<body>
+
+    <div class="container-fluid">
+
+        
+
+        <div class="row">
+
+            <div class="col-md-5">
+
+                <div class="card shadow-lg">
+
+                    <div class="card-body text-center">
+
+                        <h2 class="text-center">Pilih Acak</h2>
+
+                        <div id="chart"></div>
+
+                        
+
+                        <div id="win"><span class="my-2 badge rounded-pill bg-success"></span></div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            
+
+            <div class="col-md-7">
+
+                <div class="card shadow-lg">
+
+                    <div class="card-body">
+
+                        <div>
+
+                            <h2 class="text-center" >Tambah Data</h2>
+
+                            <form class="d-flex" onsubmit="return AddData(event)">
+
+                                <input id="input_data" type="text" class="form-control">
+
+                                <button  type="submit" class="btn btn-primary mx-2">Simpan</button>
+
+                            </form>
+
+                        </div>
+
+                        <div class="mt-3">
+
+                            <h2 class="text-center">List Data</h2>
+
+                            <div id="list">
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    
+
+    <script src="https://d3js.org/d3.v3.min.js" charset="utf-8"></script>
+
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/3.6.0/mdb.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+    <script src="main.js"></script>
+
+    
+
+</body>
+
+</html>
