@@ -149,7 +149,7 @@ const list_element = document.getElementById('list');
 RenderList();
 
 if(list_data.length <2){
-    S_Alert('Isi data dulu ya bro!','Minimal 2 deh.');
+    S_Alert('Isi data dulu ya kak!','Minimal 2 deh.');
 }else{
     SetUpPie(list_data);
 }
