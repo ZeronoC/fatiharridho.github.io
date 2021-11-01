@@ -1,0 +1,91 @@
+<!--Dibuat Oleh Fatih Arridho-->
+
+<!--Yang Hapus WM Anak Haram-->
+
+<!DOCTYPE html>
+
+<html>
+
+  <head>
+
+	 	<title>Bot Magernulis V6 - Fatih Arridho</title>			 
+
+			  	 <link type="image/png" href="https://telegra.ph/file/4f2cd42719830eba6b5f1.jpg" rel="icon">
+
+				 <meta property="og:image" content="https://telegra.ph/file/4f2cd42719830eba6b5f1.jpg">
+
+				 <meta content="Bot Magernulis Otomatis." name="description">
+
+				 <meta content="Bot Magernulis" name="keywords">
+
+				 <meta name="theme-color" content="black">
+
+				 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		 <link href="https://fatiharridho.my.id/css/styles.css" rel="stylesheet" />
+
+	<div class="tile">
+
+		<!-- Hasil Gambar Akan Muncul Di Sini -->
+
+		<div class="tile-body" id="hasil">
+
+		</div>
+
+	</div>
+
+	<br>
+
+	<br>
+
+<center>
+
+	<div class="tile">
+
+		<div class="tile-body">
+
+			<br>
+
+			<textarea id='teks' class="form-control" placeholder="Masukan Text Yang Ingin Di Tulis !" rows="12" required=true></textarea>
+
+		</div>
+
+	</div>
+
+	<div class="tile">
+
+		<div class="row">
+
+		</div>
+
+<iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://fatiharridho.my.id/duka.mp3"></iframe>
+
+		<div class="col">
+
+			<input type='button' onclick="buat()" value="TULIS" id='button' class="btn btn-danger btn-block">
+
+		</div>
+
+	</div>
+
+                    
+
+	<script>
+
+		function buat() {
+			var isi = encodeURIComponent(document.getElementById("teks").value);
+			document.querySelector('#hasil').innerHTML = `<img style='max-width: 450px;max-height: 450px;' src='https://api.xteam.xyz/magernulis6?text=${isi}&APIKEY=9251ce24be074f80' alt="hasil-fatiharridho.png"></img>`;
+
+		}
+
+		
+
+	</script>
+
+               </div>
+
+          </div>
+
+          </body>
+
+          </html>
