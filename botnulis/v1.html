@@ -1,0 +1,55 @@
+<!--Created By
+Fatih Arridho
+FERDIZ-AFK
+HADI
+MHANK BAR-BAR-->
+<!DOCTYPE html>
+<html>
+  <head>
+	 	<title>Bot Nulis - Fatih Arridho</title>
+			  	 <link type="image/png" href="https://telegra.ph/file/4f2cd42719830eba6b5f1.jpg" rel="icon">
+				 <meta property="og:image" content="https://telegra.ph/file/4f2cd42719830eba6b5f1.jpg">
+				 <meta content="Bot Untuk Menulis Otomatis." name="description">
+				 <meta content="Bot Nulis" name="keywords">
+				 <meta name="theme-color" content="black">
+				 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		 <link href="http://fatiharridho.my.id/css/styles.css" rel="stylesheet" />
+<center>
+	<div class="tile">
+		<!-- Hasil Gambar Akan Muncul Di Sini -->
+		<div class="tile-body" id="hasil"
+		</div>
+	</div>
+<br><br>
+<div class="tile">
+<div class="tile-body">
+<br>
+<textarea id='nama' class="form-control" placeholder="Masukan nama kamu !" required=true></textarea>
+<br>
+<textarea id='kelas' class="form-control" placeholder="Masukan kelas !" required=true></textarea>
+<br>
+<textarea id='nomor' class="form-control" placeholder="Masukan nomor absen !" required=true></textarea>
+<br>
+<textarea id='teks' class="form-control" placeholder="Masukan Text Yang Ingin Di Tulis !" rows="12" required=true></textarea>
+</div></div>
+<div class="tile">
+<div class="row">
+</div>
+<iframe width="0%" height="0" scrolling="no" frameborder="no" allow="autoplay" src="https://fatiharridho.my.id/Toxic-Friends.mp3"></iframe>
+<div class="col">
+<input type='button' onclick="buat()" value="TULIS" id='button' class="btn btn-danger btn-block">
+</div></div>
+
+<script>
+	function buat() {
+var jeneng = encodeURIComponent(document.getElementById("nama").value);
+var kelase = encodeURIComponent(document.getElementById("kelas").value);
+var nomore = encodeURIComponent(document.getElementById("nomor").value);
+var isi = encodeURIComponent(document.getElementById("teks").value);
+document.querySelector('#hasil').innerHTML = `<img style='max-width: 450px;max-height: 450px;' src='https://fdz-app.herokuapp.com/api/tulis?nama=${jeneng}&no=${nomore}&kelas=${kelase}&text=${isi}' alt="hasil-fatiharridho.png"></img>`;
+}
+</script>
+</div>
+</div>
+</body>
+</html>
